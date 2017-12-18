@@ -1,0 +1,12 @@
+{
+    "name": "twinscom/php-cs-fixer-config",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Twinscom\\PhpCsFixerConfig\\": ""
+        }
+    },
+    "license": "CC0-1.0"
+}
