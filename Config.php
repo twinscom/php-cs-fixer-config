@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Twinscom\PhpCsFixerConfig;
 
-class Config extends PhpCsFixer\Config
+class Config extends \PhpCsFixer\Config
 {
     public function __construct($name = 'twinscom')
     {
