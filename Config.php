@@ -60,7 +60,7 @@ class Config extends \PhpCsFixer\Config
                         'srand' => 'mt_srand',
                     ],
                 ],
-                'no_extra_consecutive_blank_lines' => [
+                'no_extra_blank_lines' => [
                     'tokens' => [
                         'break',
                         'case',
@@ -85,6 +85,7 @@ class Config extends \PhpCsFixer\Config
                 // Not in rulesets:
                 'array_syntax' => ['syntax' => 'short'],
                 'align_multiline_comment' => ['comment_type' => 'phpdocs_like'],
+                'backtick_to_shell_exec' => true,
                 'combine_consecutive_issets' => true,
                 'combine_consecutive_unsets' => true,
                 'compact_nullable_typehint' => true,
@@ -96,7 +97,8 @@ class Config extends \PhpCsFixer\Config
                 'list_syntax' => ['syntax' => 'short'],
                 'mb_str_functions' => true,
                 'method_chaining_indentation' => true,
-                'no_multiline_whitespace_before_semicolons' => true,
+                'multiline_comment_opening_closing' => true,
+                'multiline_whitespace_before_semicolons' => true,
                 'no_null_property_initialization' => true,
                 'no_php4_constructor' => true,
                 'no_superfluous_elseif' => true,
