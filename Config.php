@@ -81,6 +81,11 @@ class Config extends \PhpCsFixer\Config
                 // Different from rulesets:
                 'concat_space' => ['spacing' => 'one'],
                 'is_null' => ['use_yoda_style' => false],
+                'yoda_style' => [
+                    'equal' => false,
+                    'identical' => false,
+                    'less_and_greater' => false,
+                ],
 
                 // Not in rulesets:
                 'array_syntax' => ['syntax' => 'short'],
@@ -123,7 +128,6 @@ class Config extends \PhpCsFixer\Config
 
                 // Disabled ruleset configurations:
                 'phpdoc_align' => false,
-                'yoda_style' => false,
 
                 // Disabled configurations:
                 'class_keyword_remove' => false,
