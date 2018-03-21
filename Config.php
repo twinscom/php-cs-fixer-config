@@ -24,7 +24,19 @@ class Config extends \PhpCsFixer\Config
                 // Stricter than rulesets:
                 'braces' => true,
                 'class_attributes_separation' => true,
+                'function_to_constant' => [
+                    'functions' => [
+                        'get_called_class',
+                        'get_class',
+                        'php_sapi_name',
+                        'phpversion',
+                        'pi',
+                    ],
+                ],
                 'single_class_element_per_statement' => true,
+                'single_quote' => [
+                    'strings_containing_single_quote_chars' => true,
+                ],
 
                 // Stricter than rulesets and defaults:
                 'method_argument_space' => ['ensure_fully_multiline' => true],
@@ -88,22 +100,27 @@ class Config extends \PhpCsFixer\Config
                 ],
 
                 // Not in rulesets:
+                'array_indentation' => true,
                 'array_syntax' => ['syntax' => 'short'],
                 'align_multiline_comment' => ['comment_type' => 'phpdocs_like'],
                 'backtick_to_shell_exec' => true,
                 'combine_consecutive_issets' => true,
                 'combine_consecutive_unsets' => true,
+                'comment_to_phpdoc' => true,
                 'compact_nullable_typehint' => true,
+                'date_time_immutable' => true,
                 'escape_implicit_backslashes' => true,
                 'explicit_indirect_variable' => true,
                 'explicit_string_variable' => true,
                 'final_internal_class' => true,
+                'fully_qualified_strict_types' => true,
                 'linebreak_after_opening_tag' => true,
                 'list_syntax' => ['syntax' => 'short'],
                 'mb_str_functions' => true,
                 'method_chaining_indentation' => true,
                 'multiline_comment_opening_closing' => true,
                 'multiline_whitespace_before_semicolons' => true,
+                'no_alternative_syntax' => true,
                 'no_null_property_initialization' => true,
                 'no_php4_constructor' => true,
                 'no_superfluous_elseif' => true,
@@ -117,6 +134,8 @@ class Config extends \PhpCsFixer\Config
                         'function',
                     ],
                 ],
+                'php_unit_ordered_covers' => true,
+                'php_unit_set_up_tear_down_visibility' => true,
                 'php_unit_strict' => true,
                 'phpdoc_add_missing_param_annotation' => true,
                 'phpdoc_order' => true,
@@ -125,6 +144,7 @@ class Config extends \PhpCsFixer\Config
                 'static_lambda' => true,
                 'strict_comparison' => true,
                 'strict_param' => true,
+                'string_line_ending' => true,
 
                 // Disabled ruleset configurations:
                 'phpdoc_align' => false,
