@@ -6,6 +6,7 @@ namespace Twinscom\PhpCsFixerConfig;
 
 class Config extends \PhpCsFixer\Config
 {
+    // phpcs:ignore Generic.CodeAnalysis.UselessOverridingMethod
     public function __construct($name = 'twinscom')
     {
         parent::__construct($name);
