@@ -170,6 +170,7 @@ class Config extends \PhpCsFixer\Config
 
                 // Disabled ruleset configurations:
                 'phpdoc_align' => false,
+                'standardize_increment' => false,
 
                 // Disabled configurations:
                 'class_keyword_remove' => false,
