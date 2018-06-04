@@ -40,12 +40,16 @@ class Config extends \PhpCsFixer\Config
                 ],
 
                 // Stricter than rulesets and defaults:
-                'method_argument_space' => ['ensure_fully_multiline' => true],
+                'method_argument_space' => [
+                    'on_multiline' => 'ensure_fully_multiline',
+                ],
                 'blank_line_before_statement' => [
                     'statements' => [
                         'break',
+                        'case',
                         'continue',
                         'declare',
+                        'default',
                         'die',
                         'do',
                         'exit',
@@ -93,6 +97,10 @@ class Config extends \PhpCsFixer\Config
 
                 // Different from rulesets:
                 'concat_space' => ['spacing' => 'one'],
+                'error_suppression' => [
+                    'mute_deprecation_error' => false,
+                    'noise_remaining_usages' => true,
+                ],
                 'is_null' => ['use_yoda_style' => false],
                 'yoda_style' => [
                     'equal' => false,
@@ -117,14 +125,18 @@ class Config extends \PhpCsFixer\Config
                 'fully_qualified_strict_types' => true,
                 'linebreak_after_opening_tag' => true,
                 'list_syntax' => ['syntax' => 'short'],
+                'logical_operators' => true,
                 'mb_str_functions' => true,
                 'method_chaining_indentation' => true,
                 'multiline_comment_opening_closing' => true,
                 'multiline_whitespace_before_semicolons' => true,
                 'no_alternative_syntax' => true,
+                'no_binary_string' => true,
                 'no_null_property_initialization' => true,
                 'no_php4_constructor' => true,
                 'no_superfluous_elseif' => true,
+                'no_superfluous_phpdoc_tags' => true,
+                'no_unset_on_property' => true,
                 'no_useless_else' => true,
                 'no_useless_return' => true,
                 'ordered_class_elements' => [
@@ -156,12 +168,17 @@ class Config extends \PhpCsFixer\Config
                         'const',
                     ],
                 ],
+                'php_unit_internal_class' => true,
                 'php_unit_ordered_covers' => true,
                 'php_unit_set_up_tear_down_visibility' => true,
                 'php_unit_strict' => true,
+                'php_unit_test_case_static_method_calls' => true,
                 'phpdoc_add_missing_param_annotation' => true,
                 'phpdoc_order' => true,
+                'phpdoc_to_return_type' => true,
+                'phpdoc_trim_consecutive_blank_line_separation' => true,
                 'phpdoc_types_order' => true,
+                'return_assignment' => true,
                 'simplified_null_return' => true,
                 'static_lambda' => true,
                 'strict_comparison' => true,
@@ -169,6 +186,7 @@ class Config extends \PhpCsFixer\Config
                 'string_line_ending' => true,
 
                 // Disabled ruleset configurations:
+                'native_constant_invocation' => false,
                 'phpdoc_align' => false,
                 'standardize_increment' => false,
 
