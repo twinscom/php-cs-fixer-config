@@ -152,8 +152,8 @@ class Config extends \PhpCsFixer\Config
                 'ordered_imports' => [
                     'importsOrder' => [
                         'class',
-                        'const',
                         'function',
+                        'const',
                     ],
                 ],
                 'php_unit_ordered_covers' => true,
