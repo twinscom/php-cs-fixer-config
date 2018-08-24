@@ -2,7 +2,7 @@
     "name": "twinscom/php-cs-fixer-config",
     "require": {
         "php": ">=7.1",
-        "friendsofphp/php-cs-fixer": "^2.12"
+        "friendsofphp/php-cs-fixer": "^2.13"
     },
     "autoload": {
         "psr-4": {

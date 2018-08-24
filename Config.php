@@ -94,6 +94,7 @@ class Config extends \PhpCsFixer\Config
                         'use_trait',
                     ],
                 ],
+                'no_alias_functions' => ['sets' => ['@all']],
 
                 // Different from rulesets:
                 'concat_space' => ['spacing' => 'one'],
@@ -184,11 +185,13 @@ class Config extends \PhpCsFixer\Config
                 'strict_comparison' => true,
                 'strict_param' => true,
                 'string_line_ending' => true,
+                'php_unit_method_casing' => true,
 
                 // Disabled ruleset configurations:
                 'native_constant_invocation' => false,
                 'phpdoc_align' => false,
                 'standardize_increment' => false,
+                'native_function_invocation' => false,
 
                 // Disabled configurations:
                 'class_keyword_remove' => false,
@@ -201,7 +204,6 @@ class Config extends \PhpCsFixer\Config
                 'no_short_echo_tag' => false,
                 'not_operator_with_space' => false,
                 'not_operator_with_successor_space' => false,
-                'native_function_invocation' => false,
             ])
             ->setRiskyAllowed(true)
             ->setUsingCache(false);
