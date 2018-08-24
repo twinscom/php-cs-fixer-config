@@ -186,6 +186,7 @@ class Config extends \PhpCsFixer\Config
                 'strict_param' => true,
                 'string_line_ending' => true,
                 'php_unit_method_casing' => true,
+                'no_unreachable_default_argument_value' => true,
 
                 // Disabled ruleset configurations:
                 'native_constant_invocation' => false,
